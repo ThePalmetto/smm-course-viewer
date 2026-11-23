@@ -1,6 +1,6 @@
 # Validation evidence and scope
 
-## Completed independent Option A verification
+## Original independent Option A verification (historical baseline)
 
 A new disposable checkout started at upstream f807f0247bac4c553288700bf7c08dd8502eead0. All 17 actual merges were performed in the documented order. Three were clean; fourteen had exactly the recorded conflicts. Every intermediate tree matched. Compatibility and the final safety patch then yielded c75546d5456ba655c7a1afa59ddc31dc80186347.
 
@@ -19,13 +19,40 @@ Supplemental checks cover pending/failed/missing/successful atlases, actual supp
 
 Nine JavaScript syntax checks, the 115-object parser smoke test, source/asset hashes, clean tree, all PR ancestors and diff checks also passed on the replayed checkout. No production or test expectations changed during that independent verification.
 
+## Refreshed PR #14 integration verification
+
+The refreshed verification branch is
+`test/option-a-refresh-pr14`, commit
+`10948310b1b3ba09e6f0cd689b5151ee73f08b8d`,
+tree `ac33cc4c42aeb540a567ac01f31b964339a70994`.
+
+The updated PR #14 source is
+`18904496cf9278a312df35f08bc495b8a8cc723f`.
+The refreshed application differs from the original independently tested
+tree in exactly two files:
+
+- `layout/draw/custom/smb1/buzzy-shelmet-black.png`
+- `layout/draw/custom/smb3/buzzy-shelmet-black.png`
+
+A complete independent 17-PR merge rehearsal passed all 19 tree
+checkpoints, including compatibility and artwork safety. A separate
+portable online replay fetched the published GitHub references and
+reproduced the exact refreshed final tree without borrowing local
+Git objects. Both corrected PNGs passed structural and CRC checks.
+JavaScript syntax checks and conflict-marker checks also passed.
+
+The original 41,527 automated checks and rendering-parity recordings
+were performed against the original application tree, not the refreshed
+one. The complete regression suite and refreshed browser visual
+comparison have not been rerun.
+
 ## Publication/package checks
 
 The testing branch retains the exact replay commit and source tree. The publication check verifies ancestry, tree/file/asset hashes, guard patch identity, syntax/parser checks and clean state. It does not claim a newly repeated 41,527-case run or new browser testing.
 
-The compact package retains exact original patches, intermediate trees and small result summaries. Full harness fixtures and raw logs remain in preserved original evidence rather than this Git documentation branch. They are required for a new full 41,527-case rerun. Node's existing test/test.js remains available in the application checkout.
+The compact package retains the documented conflict resolutions, updated intermediate tree pins and small result summaries. The PR #14 resolution patch differs from the original only in the updated Git conflict-marker commit SHA. Full harness fixtures and raw logs remain in preserved original evidence rather than this Git documentation branch. They are required for a new full 41,527-case rerun. Node's existing test/test.js remains available in the application checkout.
 
-The original offline replay and independent end-to-end replay already ran successfully. The portable packaging copies of replay-online.py/replay-offline.py are syntax/CLI reviewed; their patch/asset operations and tree outcomes are checked against that evidence. Their rewritten packaging entry points are not claimed as a newly executed full merge rehearsal.
+The refreshed portable online and offline replay scripts have both been executed successfully. Each independently reconstructed all 17 PR merges, applied the documented compatibility and safety patches, and reproduced the exact refreshed application tree `ac33cc4c42aeb540a567ac01f31b964339a70994`. The offline result additionally passed verification of all 233 tracked file hashes and all 17 PR ancestors. These replay checks do not constitute a new 41,527-case regression run or browser visual sign-off.
 
 After replay or cloning the browser branch:
 

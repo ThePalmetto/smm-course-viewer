@@ -14,7 +14,7 @@ checkout = Path(args.checkout).resolve()
 def git(*arguments):
     return subprocess.check_output(['git', '--no-optional-locks', '-C', str(checkout),
                                     *arguments], text=True).strip()
-assert git('rev-parse', 'HEAD^{tree}') == 'c75546d5456ba655c7a1afa59ddc31dc80186347'
+assert git('rev-parse', 'HEAD^{tree}') == 'ac33cc4c42aeb540a567ac01f31b964339a70994'
 assert not git('status', '--porcelain')
 files = json.loads((root / 'final-file-sha256.json').read_text())
 assert set(git('ls-files', '-z').split('\0')) - {''} == set(files)

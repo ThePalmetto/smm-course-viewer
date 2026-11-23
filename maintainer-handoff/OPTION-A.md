@@ -13,14 +13,14 @@ Start from upstream `f807f0247bac4c553288700bf7c08dd8502eead0` in a new disposab
 | 7 | #9 | Cannon source crops, mounting angles and size-dependent centers; invalid-rotation guard. | `e5352e338974e7fa3b3fc18352baeb379c78c1de` | `de2e6f4ce0a5dc419d42726d35213b3fcc2749b2` |
 | 8 | #13 | Surface orientation and flipping for Spiny, Buzzy Beetle and Spike Top. | `dce2654abbcc4d22cac98f00e95c296559ca4864` | `ebe854cab2780c2ea1a970a19a6bac55cc07139a` |
 | 9 | #24 | Theme-dependent Buzzy Beetle/Fire Piranha colors without changing metadata. | `b4df66491d2f6ad853761cc44b5f7a0c90b34dd9` | `4f8512da7eed153928a1572b07e080dc0158c49f` |
-| 10 | #14 | Empty Spiny/Buzzy Shelmet custom artwork and appropriate theme colors. | `16daacfc6041866c5ef8f9c34311b6818cfb29c3` | `120a5de8906bba6d94707a76e84e1bedba195f17` |
-| 11 | #15 | Fire Bar variable lengths, unsigned rotation data and guarded sprite drawing. | `368aaa17eb8ecc19dcc6fced3c5efebd426786df` | `44656b51893f495f780d8e8b43cda8b2b281f5ea` |
-| 12 | #16 | Wiggler body/head/flower composition and loaded custom Angry Wiggler body artwork. | `7ebfc4aeb919bccccf8e0a671b54f065bf21bc29` | `9566d088d6ec81e7e14517a8b7537d2e29350c56` |
-| 13 | #17 | Custom P Switch sprites for M1/WU with atlas fallback; preserve P Doors. | `e5192068dfaea0ba6968a446c15425eafcfe2e6f` | `a3b813ee593a0b232c877f41f41c42a03f6dfd9f` |
-| 14 | #22 | Custom Shoe/Stiletto artwork, bottom anchoring and aspect ratio with safe atlas fallback. | `f2bac6fabcf114d4cb700a6771dd62ddebba53cb` | `05076cd5b511db517d038ff66216b17479e2ce39` |
-| 15 | #25 | Playing-card symbols on linked normal/P/key doors with safe image completion. | `7b99e2d24d71bccf47acd685c6364dc62d0d7d9d` | `2c1c0f4c36e9fa4dd5b71002a7ec5022780d39e7` |
-| 16 | #21 | Pipe-attached enemy/item/coin placement, finalized offsets and foreground pipe occlusion. | `5feca7b5f7732538d69f999eebfacbeaafcaa58e` | `916e3e405555f34fe99379ca2fd6a4544943052f` |
-| 17 | #23 | One/two wings, supported-object dispatch, game-style offsets and wing artwork readiness. | `7c9caa284b5381fd762c7da8f1fa46e076f4c201` | `fb67df2b91bbc56d391f82a9df9f2e8539991ea6` |
+| 10 | #14 | Empty Spiny/Buzzy Shelmet custom artwork and appropriate theme colors. | `18904496cf9278a312df35f08bc495b8a8cc723f` | `b8b887955410fae706c2a6e2acca0b120d408ec4` |
+| 11 | #15 | Fire Bar variable lengths, unsigned rotation data and guarded sprite drawing. | `368aaa17eb8ecc19dcc6fced3c5efebd426786df` | `4b45dc9444edc4dc483ad38856d0d5765edbb67e` |
+| 12 | #16 | Wiggler body/head/flower composition and loaded custom Angry Wiggler body artwork. | `7ebfc4aeb919bccccf8e0a671b54f065bf21bc29` | `b97f6c97160336dac1c213e6a5dd6b207587367a` |
+| 13 | #17 | Custom P Switch sprites for M1/WU with atlas fallback; preserve P Doors. | `e5192068dfaea0ba6968a446c15425eafcfe2e6f` | `256deeacaac7c47c41e63d5e78f792a95847535a` |
+| 14 | #22 | Custom Shoe/Stiletto artwork, bottom anchoring and aspect ratio with safe atlas fallback. | `f2bac6fabcf114d4cb700a6771dd62ddebba53cb` | `e412dc878492a91db65001f5ddce3ac8310db65b` |
+| 15 | #25 | Playing-card symbols on linked normal/P/key doors with safe image completion. | `7b99e2d24d71bccf47acd685c6364dc62d0d7d9d` | `ff3b67f761b2ce8af276da8bfd5d506d69a80e39` |
+| 16 | #21 | Pipe-attached enemy/item/coin placement, finalized offsets and foreground pipe occlusion. | `5feca7b5f7732538d69f999eebfacbeaafcaa58e` | `728927beb1760a693f385c166d344dc3cf82272c` |
+| 17 | #23 | One/two wings, supported-object dispatch, game-style offsets and wing artwork readiness. | `7c9caa284b5381fd762c7da8f1fa46e076f4c201` | `2952e31149a63db88ac9536dda448e0de0f428e2` |
 
 ## Exact conflict resolutions
 
@@ -66,7 +66,7 @@ For clean merges omit the patch/add commands and commit the automatic merge. A l
 
 After step 17, apply compatibility-code.patch and provision the 28 exact PNGs listed in ASSETS.md. replay-online.py extracts only those artwork bytes from approved integration and verifies their hashes; it never copies complete renderer source methods.
 
-Commit that layer and require tree `47a1034c8c15b6fa12f64cb4d988c5640c6c76bc`. Then:
+Commit that layer and require tree `8f0aaf1ce6e993bbcd7093bc58cc13aa2b8ca471`. Then:
 
 ```bash
 git apply --check /path/to/maintainer-handoff/final-artwork-safety.patch
@@ -76,7 +76,7 @@ git diff --cached --numstat
 # Required: 19 insertions, 0 deletions, draw/Draw.js only.
 git commit -m "Guard specialized rendering against failed monster atlases"
 git rev-parse HEAD^{tree}
-# Required: c75546d5456ba655c7a1afa59ddc31dc80186347
+# Required: ac33cc4c42aeb540a567ac01f31b964339a70994
 ```
 
 The compatibility code reconciles two-pass Castle lava, scene/pipe ordering, track dispatch, surface/theme/custom-artwork precedence, Wiggler pipe composition, body/wing pivots and approved enlarged one-wing adjustments. The type-45 body offsets already come from #21 and must not be added twice. Add the final failed-atlas guards once after compatibility.

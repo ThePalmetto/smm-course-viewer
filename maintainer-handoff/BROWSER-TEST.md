@@ -4,28 +4,32 @@ Use a new directory. Existing viewer, test courses and stash remain untouched. N
 
 ```bash
 git clone --single-branch --branch handoff/option-a-merge-package \
-  https://github.com/ericp86/smm-course-viewer.git \
+  https://github.com/ThePalmetto/smm-course-viewer.git \
   "$HOME/smm-option-a-handoff"
-git clone --single-branch --branch test/option-a-final-verification \
-  https://github.com/ericp86/smm-course-viewer.git \
-  "$HOME/smm-option-a-final"
+git clone --single-branch --branch test/option-a-refresh-pr14 \
+  https://github.com/ThePalmetto/smm-course-viewer.git \
+  "$HOME/smm-option-a-browser-refresh"
 python3 "$HOME/smm-option-a-handoff/maintainer-handoff/verify-manifest.py"
 python3 "$HOME/smm-option-a-handoff/maintainer-handoff/verify-tree.py" \
-  --checkout "$HOME/smm-option-a-final"
-git -C "$HOME/smm-option-a-final" rev-parse HEAD
-# e14a6c1d5956b15cbfdaf00bd4bd1713a5dfaae9
-git -C "$HOME/smm-option-a-final" rev-parse HEAD^{tree}
-# c75546d5456ba655c7a1afa59ddc31dc80186347
+  --checkout "$HOME/smm-option-a-browser-refresh"
+git -C "$HOME/smm-option-a-browser-refresh" rev-parse HEAD
+# 10948310b1b3ba09e6f0cd689b5151ee73f08b8d
+git -C "$HOME/smm-option-a-browser-refresh" rev-parse HEAD^{tree}
+# ac33cc4c42aeb540a567ac01f31b964339a70994
 ```
 
 Git clone refuses an existing nonempty destination; choose another new directory rather than deleting files. In a separate terminal:
 
 ```bash
 python3 -m http.server 8008 --bind 127.0.0.1 \
-  --directory "$HOME/smm-option-a-final"
+  --directory "$HOME/smm-option-a-browser-refresh"
 ```
 
-Leave the existing port-8007 viewer alone. Compare http://localhost:8007 and http://localhost:8008. Confirm the reference serves the intended approved version before drawing conclusions. Disable browser cache with DevTools open, hard-reload both, and match zoom/viewer scale. Select the same existing CDT through Browse; do not move, edit or overwrite it.
+Port 8008 is an example; choose an unused port if necessary. If a separately verified reference viewer is running on port 8007, compare http://localhost:8007 with http://localhost:8008. Otherwise establish a known reference before comparing. Confirm the reference serves the intended approved version before drawing conclusions. Disable browser cache with DevTools open, hard-reload both, and match zoom/viewer scale. Select the same existing CDT through Browse; do not move, edit or overwrite it.
+
+## Refreshed PR #14 artwork verification
+
+The refreshed tree differs from the original independently tested tree only in the SMB1 and SMB3 black Buzzy Shelmet PNGs. Visually inspect both styles in themes that select the black artwork, checking their off-black color and surrounding sprite transparency. Record this as new visual verification, separate from the original 41,527 automated regression checks.
 
 ## Combined-feature checklist
 

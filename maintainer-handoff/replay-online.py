@@ -29,7 +29,8 @@ required += [f"merges/{x['position']:02d}-pr{x['pr']}/resolution.patch"
              for x in records if x['conflictFiles']]
 for relative in required:
     assert hashlib.sha256((root / relative).read_bytes()).hexdigest() == manifest[relative]['sha256'], relative
-env = {**os.environ, 'GIT_AUTHOR_NAME': 'SMM merge rehearsal',
+env = {**os.environ,
+       'GIT_AUTHOR_NAME': 'SMM merge rehearsal',
        'GIT_AUTHOR_EMAIL': 'rehearsal@example.invalid',
        'GIT_COMMITTER_NAME': 'SMM merge rehearsal',
        'GIT_COMMITTER_EMAIL': 'rehearsal@example.invalid', 'GIT_TERMINAL_PROMPT': '0'}
@@ -73,6 +74,7 @@ for record in records:
     git('diff', '--cached', '--check')
     git('commit', '-m', f"Merge PR #{record['pr']} with documented resolution")
     assert git('rev-parse', 'HEAD^{tree}') == trees[str(record['pr'])]
+    print(f"PR #{record['pr']}: tree verified", flush=True)
 
 git('apply', '--check', str(root / 'compatibility-code.patch'))
 git('apply', '--index', str(root / 'compatibility-code.patch'))
@@ -87,13 +89,13 @@ for relative in (root / 'compatibility-assets.txt').read_text().splitlines():
     git('add', '--', relative)
 git('diff', '--cached', '--check')
 git('commit', '-m', 'Reconcile renderer compatibility and approved atlas assets')
-assert git('rev-parse', 'HEAD^{tree}') == '47a1034c8c15b6fa12f64cb4d988c5640c6c76bc'
+assert git('rev-parse', 'HEAD^{tree}') == '8f0aaf1ce6e993bbcd7093bc58cc13aa2b8ca471'
 git('apply', '--check', str(root / 'final-artwork-safety.patch'))
 git('apply', '--index', str(root / 'final-artwork-safety.patch'))
 assert git('diff', '--cached', '--numstat') == '19\t0\tdraw/Draw.js'
 git('diff', '--cached', '--check')
 git('commit', '-m', 'Guard specialized rendering against failed monster atlases')
-assert git('rev-parse', 'HEAD^{tree}') == 'c75546d5456ba655c7a1afa59ddc31dc80186347'
+assert git('rev-parse', 'HEAD^{tree}') == 'ac33cc4c42aeb540a567ac01f31b964339a70994'
 assert not git('status', '--porcelain')
 print(json.dumps({'head': git('rev-parse', 'HEAD'), 'tree': git('rev-parse', 'HEAD^{tree}'),
                   'published': False}, indent=2))

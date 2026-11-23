@@ -6,8 +6,8 @@ This compact package does not include a binary compatibility patch or PNG copies
 
 - Online source: compare/enhanced at 138004b530435efe423d9ed7065093101645963f.
 - Offline source: HEAD of the explicitly supplied bundle; every selected atlas must match the same approved hashes.
-- Expected compatibility tree before safety: 47a1034c8c15b6fa12f64cb4d988c5640c6c76bc.
-- Expected final application tree: c75546d5456ba655c7a1afa59ddc31dc80186347.
+- Expected compatibility tree before safety: 8f0aaf1ce6e993bbcd7093bc58cc13aa2b8ca471.
+- Expected final application tree: ac33cc4c42aeb540a567ac01f31b964339a70994.
 
 Original upstream README workflow: obtain images for layout/draw/monster/ and layout/draw/titleset/ separately, open index.html, then Load Example or Browse to an existing CDT. External provisioning is compatible, but the exact listed bytes are required to reproduce the validated self-contained tree. Do not generate, recompress or substitute artwork.
 

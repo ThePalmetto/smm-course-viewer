@@ -1,7 +1,7 @@
 {
   "BROWSER-TEST.md": {
-    "bytes": 3393,
-    "sha256": "3d1bf43e33ee09b8c8de867456d95f89e0637a4f3f8a8d6adae5f2e5989d5bc7"
+    "bytes": 3994,
+    "sha256": "97d9df98418594e85a26e128f3fad6e3ca6f9d375507f640c0f2b886d0361ba4"
   },
   "MAINTAINER-MESSAGE.md": {
     "bytes": 862,
@@ -12,48 +12,48 @@
     "sha256": "2b54ac1662b1d56ba5749880e842af8f9ab7997d7b78ae17dc533e8c42d3846c"
   },
   "VALIDATION.md": {
-    "bytes": 4142,
-    "sha256": "d0d26b91d33c82e597d187ee96d07dd98340343d103b052f434f99e63b97808b"
+    "bytes": 5569,
+    "sha256": "d57e2a8773fa15b8950bb98f74e2f02132b27bef1fc03edffcc8d67734dbcff8"
   },
   "SOURCE-COMPARISON.md": {
-    "bytes": 2000,
-    "sha256": "cedc54ca1c260d370b706e5ce6533f355bc22e1598841d81990fd80759aa1ad9"
+    "bytes": 2728,
+    "sha256": "6d233bd48fa721cec0b52d29c36333af276c2bae43f6fd89aecacb6dcb12aacf"
   },
   "ASSETS.md": {
     "bytes": 4833,
-    "sha256": "6704618ac8db33ea98691a08e87772884269f23abed66c5be7f95e4a9d89cc1d"
+    "sha256": "6973a0d7c2d80c2cce736a5c3afc5feb7173557a526ebdeb908796f3b5fdc0aa"
   },
   "PR-INVENTORY.md": {
     "bytes": 9486,
-    "sha256": "e6cc6b3f6ef8db8c8d438ef5226baa270317a9ea5f8bed256df55f754f697548"
+    "sha256": "27e6eba285c2145a8be78f94d9b881055e586d2a508174f4492f805ce94414ac"
   },
   "OPTION-A.md": {
     "bytes": 11737,
-    "sha256": "8d67b1d2ebb46db4146420439391a512bdd67e43285b7b260136e6902499e6fd"
+    "sha256": "2997c3d6fa8b21c51baae0fd05ab9959fa20ee842d0d7046cc23618e16b15240"
   },
   "FINAL-STATUS.md": {
-    "bytes": 2240,
-    "sha256": "dff3ca05d266746d5368e9860096b8553d73961d094a4a05e5afb007626c9545"
+    "bytes": 3349,
+    "sha256": "ec75a1caa15100a7566f01ffb4f0e9793e42eac9834d22f4d0f96e26057606e1"
   },
   "README.md": {
-    "bytes": 4006,
-    "sha256": "234c0d2b3bf82befb208734b265e018ccf1315ce74da956621a6765bd01c232b"
+    "bytes": 4763,
+    "sha256": "e28ef3d47259acf45760d244cdf88287e2a0cc87bc249c867c7d550b73c3bd6f"
   },
   "verify-tree.py": {
     "bytes": 1226,
-    "sha256": "c8f441e5e6603a4d39a49c35743b42524a3e41b0ea8e463eb71ee27064a75ebd"
+    "sha256": "51023342997e24a183ea2ba25d5c143bfa732a0c78b3fcd34062bf527cfca9d6"
   },
   "verify-manifest.py": {
     "bytes": 665,
     "sha256": "d8e436913992b97e85a687647557bc12c49b5e58708b0a6a229ad7af322cf973"
   },
   "replay-offline.py": {
-    "bytes": 4746,
-    "sha256": "27b5698628280ad19dafe28c4aaa19a98eb2dd069d8dc8ea83f1de298d2a37b8"
+    "bytes": 5108,
+    "sha256": "f6ab452a35c0f74b145289a03ac1eae338b768d00eaf9ad276f858902eeaa2f7"
   },
   "replay-online.py": {
-    "bytes": 5103,
-    "sha256": "dea87175a9f62967517b080398684922288024ad00b8ee7c7bb99284b3ea3f4b"
+    "bytes": 5170,
+    "sha256": "0f8f93e357b5f7d33ce67e9726e209c7a0aad0ccb6c7e0551d767c14d624d51e"
   },
   "asset-hashes.json": {
     "bytes": 4177,
@@ -68,28 +68,28 @@
     "sha256": "5d8d529da148af59f7200c280b75977fc5cf8410bdca4e44e3ff320e2186018a"
   },
   "merge-results.json": {
-    "bytes": 15921,
-    "sha256": "8e331c0505a19d9422ebecb282102d172e50f785b39c3d8494685ed9379c8a45"
+    "bytes": 16089,
+    "sha256": "eb56b20361b738f970dfc76a16e6aaec0b7fd6f7959c4334695359841f74bd4b"
   },
   "current-pr-metadata.json": {
     "bytes": 4447,
-    "sha256": "44f43d9341e847f08ceb588f4660f54d7374f08739a04b764bfdadd76f5027d5"
+    "sha256": "97f7c1753f68d94c352e134ea363b40f14b4df3a709562b3769606a05353afd9"
   },
   "inventory.json": {
     "bytes": 12093,
     "sha256": "e94979880b35497598b60e9f63ef5771eb2a720a03285c46e2ebc98f6c22f88b"
   },
   "final-file-sha256.json": {
-    "bytes": 23868,
-    "sha256": "c0f6822c2d08866be9b79be72ba7283c1463d429e33429e8c9064033b2833914"
+    "bytes": 23869,
+    "sha256": "7736d8cef2bdc079ee8283a88a4099067394eb24d7acc04e0f627688aad39546"
   },
   "published-integration-file-sha256.json": {
     "bytes": 23868,
     "sha256": "07647a15b6cc6a2dd7f015c556c676b1363aa3191ed068a778e7bbc63910d59e"
   },
   "merge-tree-pins.json": {
-    "bytes": 883,
-    "sha256": "11810114d74f9343023fbe351a0dc8dd7ed40bc961a756f732d5e13d503d10f3"
+    "bytes": 884,
+    "sha256": "bda50ff627cd45c78b0af553e346c4ddb39aff42fa73d0d4ac3ccb9ea2b37fd0"
   },
   "final-artwork-safety.patch": {
     "bytes": 1323,
@@ -145,7 +145,7 @@
   },
   "merges/10-pr14/resolution.patch": {
     "bytes": 3343,
-    "sha256": "4212413c5dda1989726b2bbe98d650676e02efedb5f86a2a33597f28f8e698e0"
+    "sha256": "ed24131e769647f04122217775411a96d669e11ead8fa09d9da1cf46660b8a5c"
   },
   "merges/13-pr17/resolution.patch": {
     "bytes": 5322,

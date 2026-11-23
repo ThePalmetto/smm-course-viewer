@@ -11,7 +11,7 @@ All entries were verified open against upstream master. Source owner: ericp86. T
 | [#11](https://github.com/leomaurodesenv/smm-course-viewer/pull/11) | Fix skull coaster rendering positioning and object positioning on curved tracks | `fix/skull-coaster-rendering-positioning` | `fcb4f3b39eb45f9a05ac569a36f765a701895655` |
 | [#12](https://github.com/leomaurodesenv/smm-course-viewer/pull/12) | Add Castle lava rendering with foreground layering | `fix/castle-lava-rendering` | `b0a20faf0251fe4fd01ea6027e134d0b76190aa3` |
 | [#13](https://github.com/leomaurodesenv/smm-course-viewer/pull/13) | Fix Spiny, Buzzy Beetle, and Spike Top surface orientation | `fix/enemy-surface-orientation` | `dce2654abbcc4d22cac98f00e95c296559ca4864` |
-| [#14](https://github.com/leomaurodesenv/smm-course-viewer/pull/14) | Add Spiny and Buzzy Shelmet rendering support | `feat/shelmet-rendering` | `16daacfc6041866c5ef8f9c34311b6818cfb29c3` |
+| [#14](https://github.com/leomaurodesenv/smm-course-viewer/pull/14) | Add Spiny and Buzzy Shelmet rendering support | `feat/shelmet-rendering` | `18904496cf9278a312df35f08bc495b8a8cc723f` |
 | [#15](https://github.com/leomaurodesenv/smm-course-viewer/pull/15) | Fix fire bar rendering, length, and rotation | `fix/fire-bar-rendering` | `368aaa17eb8ecc19dcc6fced3c5efebd426786df` |
 | [#16](https://github.com/leomaurodesenv/smm-course-viewer/pull/16) | Fix Wiggler rendering across all game styles | `fix/wiggler-rendering` | `7ebfc4aeb919bccccf8e0a671b54f065bf21bc29` |
 | [#17](https://github.com/leomaurodesenv/smm-course-viewer/pull/17) | Fix P Switch sprites in SMB1 and NSMBU | `fix/p-switch-sprites` | `e5192068dfaea0ba6968a446c15425eafcfe2e6f` |

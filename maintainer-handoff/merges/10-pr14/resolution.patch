@@ -27,7 +27,7 @@
 +            this._goalTape,
              this._buzzyShelmet,
              this._spinyShelmet
-->>>>>>> 16daacfc6041866c5ef8f9c34311b6818cfb29c3
+->>>>>>> 18904496cf9278a312df35f08bc495b8a8cc723f
          ];
          /* draw configurations */
          let compare = function(a,b) {
@@ -95,7 +95,7 @@
 -            }
 -
 -            return;
-->>>>>>> 16daacfc6041866c5ef8f9c34311b6818cfb29c3
+->>>>>>> 18904496cf9278a312df35f08bc495b8a8cc723f
          }
  
          /* multiples cells */

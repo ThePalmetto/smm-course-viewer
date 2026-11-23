@@ -3,31 +3,33 @@
     "position": 1,
     "pr": 26,
     "source": "aea7027b12014b9a45ecdfd5254dc9e89f5e3f9d",
-    "before": "f807f0247bac4c553288700bf7c08dd8502eead0",
+    "before": "024c6c4ee5286b7c42826798fb53937758e25e6d",
     "conflictFiles": [],
     "automatic": true,
     "command": "git merge --no-ff --no-commit aea7027b12014b9a45ecdfd5254dc9e89f5e3f9d",
-    "mergeCommit": "e3351f04ebbfea15f69145fe09e14917c19ee415",
+    "mergeCommit": "e3e28d69417618ab6913e5549d3181fb4ed814bb",
     "resolution": "Automatic Git merge; no manual edits",
-    "resolutionPatch": null
+    "resolutionPatch": null,
+    "tree": "dd9d80c0236b4ba9317eac3bdf6c8bdc5b5ba6aa"
   },
   {
     "position": 2,
     "pr": 7,
     "source": "dd8eefd6022f32e01eb47785b35490568b94e7e4",
-    "before": "e3351f04ebbfea15f69145fe09e14917c19ee415",
+    "before": "dd9d80c0236b4ba9317eac3bdf6c8bdc5b5ba6aa",
     "conflictFiles": [],
     "automatic": true,
     "command": "git merge --no-ff --no-commit dd8eefd6022f32e01eb47785b35490568b94e7e4",
-    "mergeCommit": "9c674c90b4df5fbafd660b55185ae54ab25ca77b",
+    "mergeCommit": "15f2f39ad4cb353e7aaff1bd1d033d445e61faa1",
     "resolution": "Automatic Git merge; no manual edits",
-    "resolutionPatch": null
+    "resolutionPatch": null,
+    "tree": "4ff1703fa0ea2726608fbfc32c405b49a233d92e"
   },
   {
     "position": 3,
     "pr": 10,
     "source": "ae69e2d237a7e7bcd3860da8ccc0dfd77449d730",
-    "before": "9c674c90b4df5fbafd660b55185ae54ab25ca77b",
+    "before": "4ff1703fa0ea2726608fbfc32c405b49a233d92e",
     "conflictFiles": [
       "draw/Draw.js",
       "lib/SmmCourseViewer.js"
@@ -48,7 +50,7 @@
     ],
     "resolution": "Combine #7 sign prepasses with #10 rail dispatch in the remaining-object pass; retain fractional track X/Y and preserve fractional signed Z from #7.",
     "diffCheckStatus": 0,
-    "mergeCommit": "0446adffbde6c90b7c92ef77d024ea2f66479e94",
+    "mergeCommit": "beb568f5f866645383d967c8b38f39acc348e644",
     "tree": "8cf99cc0b4c3fe6b9125dd5c68d004d277f3f824",
     "resolutionPatch": "merges/03-pr10/resolution.patch"
   },
@@ -56,7 +58,7 @@
     "position": 4,
     "pr": 11,
     "source": "fcb4f3b39eb45f9a05ac569a36f765a701895655",
-    "before": "0446adffbde6c90b7c92ef77d024ea2f66479e94",
+    "before": "8cf99cc0b4c3fe6b9125dd5c68d004d277f3f824",
     "conflictFiles": [
       "draw/Draw.js"
     ],
@@ -71,7 +73,7 @@
     ],
     "resolution": "Keep #11 skull-atlas guard and curved-track anchor adjustment before the existing #7 specialized rotation renderers; explicitly close both inserted blocks.",
     "diffCheckStatus": 0,
-    "mergeCommit": "050e876df9631517f3747e5188033eab94bb214e",
+    "mergeCommit": "bfe937496379eba5286aef5c06e5c9e1bf232d19",
     "tree": "c87e894796ae8a8fb716479d1baf7af6926170de",
     "resolutionPatch": "merges/04-pr11/resolution.patch"
   },
@@ -79,7 +81,7 @@
     "position": 5,
     "pr": 8,
     "source": "73a990cc04d20f761f825da4a5063de04af62962",
-    "before": "050e876df9631517f3747e5188033eab94bb214e",
+    "before": "c87e894796ae8a8fb716479d1baf7af6926170de",
     "conflictFiles": [
       "draw/Draw.js"
     ],
@@ -104,7 +106,7 @@
     ],
     "resolution": "Union rail and goal-tape image initialization; keep goal scenery before sign/object passes, retain Castle-only bridge guard alongside rail dispatch; retain all specialized rotations and append disjoint goal renderers.",
     "diffCheckStatus": 0,
-    "mergeCommit": "40a413a571751b7ea52f986c87e6f3e8def21330",
+    "mergeCommit": "27f43b5391eeac7e75375d61f6d808ad64b87aec",
     "tree": "b43b5a08f967ce908e629bcdb04f5478d67a896c",
     "resolutionPatch": "merges/05-pr8/resolution.patch"
   },
@@ -112,7 +114,7 @@
     "position": 6,
     "pr": 12,
     "source": "b0a20faf0251fe4fd01ea6027e134d0b76190aa3",
-    "before": "40a413a571751b7ea52f986c87e6f3e8def21330",
+    "before": "b43b5a08f967ce908e629bcdb04f5478d67a896c",
     "conflictFiles": [
       "draw/Draw.js"
     ],
@@ -127,7 +129,7 @@
     ],
     "resolution": "Use #12 background-readiness and render-once gate while retaining #8 goal scenery and #7 sign prepasses; preserve standalone #12 single foreground lava pass.",
     "diffCheckStatus": 0,
-    "mergeCommit": "3ce345c2ce0932feaa6ac64353da9bc7d0f2cbe1",
+    "mergeCommit": "a7104c150752aefd4d7b95bd7968a5a9cc58b438",
     "tree": "74ef84d8637438cd02e324bd58722d8d3e354252",
     "resolutionPatch": "merges/06-pr12/resolution.patch"
   },
@@ -135,7 +137,7 @@
     "position": 7,
     "pr": 9,
     "source": "e5352e338974e7fa3b3fc18352baeb379c78c1de",
-    "before": "3ce345c2ce0932feaa6ac64353da9bc7d0f2cbe1",
+    "before": "74ef84d8637438cd02e324bd58722d8d3e354252",
     "conflictFiles": [
       "draw/Draw.js"
     ],
@@ -155,7 +157,7 @@
     ],
     "resolution": "Retain all existing goal/track/rotation paths and insert the disjoint cannon renderer with its size-dependent geometry and invalid-index guard; close each canvas draw/restore/return block explicitly.",
     "diffCheckStatus": 0,
-    "mergeCommit": "5ab3b45c170c2c7b03d003f2df5190aedb54c861",
+    "mergeCommit": "9c9e333f402234eaeea54deb80b8ef7e24e775e9",
     "tree": "de2e6f4ce0a5dc419d42726d35213b3fcc2749b2",
     "resolutionPatch": "merges/07-pr9/resolution.patch"
   },
@@ -163,7 +165,7 @@
     "position": 8,
     "pr": 13,
     "source": "dce2654abbcc4d22cac98f00e95c296559ca4864",
-    "before": "5ab3b45c170c2c7b03d003f2df5190aedb54c861",
+    "before": "de2e6f4ce0a5dc419d42726d35213b3fcc2749b2",
     "conflictFiles": [
       "draw/Draw.js"
     ],
@@ -178,7 +180,7 @@
     ],
     "resolution": "Retain existing disjoint goal/rotation cases and add #13 specialized surface renderer with its own readiness guard and subtype-driven sprite selection; no pipe coexistence redesign yet.",
     "diffCheckStatus": 0,
-    "mergeCommit": "7d88d60e3881c0401fd83a08b8e6a37282290463",
+    "mergeCommit": "34d3b4a47950c53d15bac989a5c77535cf2a18f1",
     "tree": "ebe854cab2780c2ea1a970a19a6bac55cc07139a",
     "resolutionPatch": "merges/08-pr13/resolution.patch"
   },
@@ -186,24 +188,25 @@
     "position": 9,
     "pr": 24,
     "source": "b4df66491d2f6ad853761cc44b5f7a0c90b34dd9",
-    "before": "7d88d60e3881c0401fd83a08b8e6a37282290463",
+    "before": "ebe854cab2780c2ea1a970a19a6bac55cc07139a",
     "conflictFiles": [],
     "automatic": true,
     "command": "git merge --no-ff --no-commit b4df66491d2f6ad853761cc44b5f7a0c90b34dd9",
-    "mergeCommit": "318f6e74a55d8c9d522563149d148767c73a603a",
+    "mergeCommit": "0b21f703e355bddec0e4fbf02772171fbf426186",
     "resolution": "Automatic Git merge; no manual edits",
-    "resolutionPatch": null
+    "resolutionPatch": null,
+    "tree": "4f8512da7eed153928a1572b07e080dc0158c49f"
   },
   {
     "position": 10,
     "pr": 14,
-    "source": "16daacfc6041866c5ef8f9c34311b6818cfb29c3",
-    "before": "318f6e74a55d8c9d522563149d148767c73a603a",
+    "source": "18904496cf9278a312df35f08bc495b8a8cc723f",
+    "before": "4f8512da7eed153928a1572b07e080dc0158c49f",
     "conflictFiles": [
       "draw/Draw.js"
     ],
     "automatic": false,
-    "command": "git merge --no-ff --no-commit 16daacfc6041866c5ef8f9c34311b6818cfb29c3",
+    "command": "git merge --no-ff --no-commit 18904496cf9278a312df35f08bc495b8a8cc723f",
     "regions": [
       {
         "file": "draw/Draw.js",
@@ -218,15 +221,15 @@
     ],
     "resolution": "Union Shelmet image registration with rails/tape; run the empty-Shelmet custom-art early return before ordinary surface enemy handling, retaining curved-track positioning and all other special cases.",
     "diffCheckStatus": 0,
-    "mergeCommit": "9ed1bebaa4cc783ed624550db6d8eda1f021b7b1",
-    "tree": "120a5de8906bba6d94707a76e84e1bedba195f17",
+    "mergeCommit": "57b882731a4aea4cc43ede378fc34e7c37dd8f03",
+    "tree": "b8b887955410fae706c2a6e2acca0b120d408ec4",
     "resolutionPatch": "merges/10-pr14/resolution.patch"
   },
   {
     "position": 11,
     "pr": 15,
     "source": "368aaa17eb8ecc19dcc6fced3c5efebd426786df",
-    "before": "9ed1bebaa4cc783ed624550db6d8eda1f021b7b1",
+    "before": "b8b887955410fae706c2a6e2acca0b120d408ec4",
     "conflictFiles": [
       "draw/Draw.js"
     ],
@@ -241,15 +244,15 @@
     ],
     "resolution": "Retain existing special cases and append the disjoint Fire Bar renderer, preserving its artwork guard, unsigned rotation decode and per-fireball save/restore.",
     "diffCheckStatus": 0,
-    "mergeCommit": "8927bf1551ce36c12f143332106195621f0a14dd",
-    "tree": "44656b51893f495f780d8e8b43cda8b2b281f5ea",
+    "mergeCommit": "daba65c02bc0303c509f4f5ff386e4075c85b594",
+    "tree": "4b45dc9444edc4dc483ad38856d0d5765edbb67e",
     "resolutionPatch": "merges/11-pr15/resolution.patch"
   },
   {
     "position": 12,
     "pr": 16,
     "source": "7ebfc4aeb919bccccf8e0a671b54f065bf21bc29",
-    "before": "8927bf1551ce36c12f143332106195621f0a14dd",
+    "before": "4b45dc9444edc4dc483ad38856d0d5765edbb67e",
     "conflictFiles": [
       "draw/Draw.js",
       "draw/MonsterDraw.js"
@@ -290,15 +293,15 @@
     ],
     "resolution": "Union all custom/rail/tape image initialization and readiness registration, keep background gate and three-argument style/theme extend call; replace only Wiggler definition with #16 composition and retain #7 Burner on/off definition.",
     "diffCheckStatus": 0,
-    "mergeCommit": "53243dfdfe6906b61f0a0305727ce151ab05c0e7",
-    "tree": "9566d088d6ec81e7e14517a8b7537d2e29350c56",
+    "mergeCommit": "0431f31350448a99df26b624ba2359fe0d1e17f3",
+    "tree": "b97f6c97160336dac1c213e6a5dd6b207587367a",
     "resolutionPatch": "merges/12-pr16/resolution.patch"
   },
   {
     "position": 13,
     "pr": 17,
     "source": "e5192068dfaea0ba6968a446c15425eafcfe2e6f",
-    "before": "53243dfdfe6906b61f0a0305727ce151ab05c0e7",
+    "before": "b97f6c97160336dac1c213e6a5dd6b207587367a",
     "conflictFiles": [
       "draw/Draw.js"
     ],
@@ -328,15 +331,15 @@
     ],
     "resolution": "Append P Switch artwork registration without replacing other image families; retain common guarded completion/background gate; combine disjoint P Switch and Angry Wiggler sprite selection before the common paint call.",
     "diffCheckStatus": 0,
-    "mergeCommit": "b73c79a9223462f7df0466f94d1e3c44281a814b",
-    "tree": "a3b813ee593a0b232c877f41f41c42a03f6dfd9f",
+    "mergeCommit": "b17c74a32b7d7be95eb4c8cf0c9bffe4234f0f9f",
+    "tree": "256deeacaac7c47c41e63d5e78f792a95847535a",
     "resolutionPatch": "merges/13-pr17/resolution.patch"
   },
   {
     "position": 14,
     "pr": 22,
     "source": "f2bac6fabcf114d4cb700a6771dd62ddebba53cb",
-    "before": "b73c79a9223462f7df0466f94d1e3c44281a814b",
+    "before": "256deeacaac7c47c41e63d5e78f792a95847535a",
     "conflictFiles": [
       "draw/Draw.js"
     ],
@@ -356,15 +359,15 @@
     ],
     "resolution": "Append Shoe/Stiletto image registration without replacing prior families; combine ready custom-shoe selection/fallback with Wiggler/P Switch selection and carry customShoe aspect-ratio flag into the common painter.",
     "diffCheckStatus": 0,
-    "mergeCommit": "ba408b93083057c6137314e03a6510abe98643f0",
-    "tree": "05076cd5b511db517d038ff66216b17479e2ce39",
+    "mergeCommit": "150de77b41e0c8512867f3b50cde837af23f0713",
+    "tree": "e412dc878492a91db65001f5ddce3ac8310db65b",
     "resolutionPatch": "merges/14-pr22/resolution.patch"
   },
   {
     "position": 15,
     "pr": 25,
     "source": "7b99e2d24d71bccf47acd685c6364dc62d0d7d9d",
-    "before": "ba408b93083057c6137314e03a6510abe98643f0",
+    "before": "e412dc878492a91db65001f5ddce3ac8310db65b",
     "conflictFiles": [
       "draw/Draw.js"
     ],
@@ -384,15 +387,15 @@
     ],
     "resolution": "Union linked-door symbol images with all previously registered artwork; preserve custom sprite initialization and guarded shared completion.",
     "diffCheckStatus": 0,
-    "mergeCommit": "7d7c4830ca623f2049c56fa82124a91438b833a7",
-    "tree": "2c1c0f4c36e9fa4dd5b71002a7ec5022780d39e7",
+    "mergeCommit": "8cdccf0c108542cc274322a353ea3d1fc5b83a32",
+    "tree": "ff3b67f761b2ce8af276da8bfd5d506d69a80e39",
     "resolutionPatch": "merges/15-pr25/resolution.patch"
   },
   {
     "position": 16,
     "pr": 21,
     "source": "5feca7b5f7732538d69f999eebfacbeaafcaa58e",
-    "before": "7d7c4830ca623f2049c56fa82124a91438b833a7",
+    "before": "ff3b67f761b2ce8af276da8bfd5d506d69a80e39",
     "conflictFiles": [
       "draw/Draw.js"
     ],
@@ -427,15 +430,15 @@
     ],
     "resolution": "Retain background gate, goal scenery, sign passes, tracks and Castle bridge filter while introducing attached-before-pipe dispatch. Union pipe and coaster readiness. Put calibrated pipe geometry and pipe-only surface bodies before existing specialized renderers; preserve theme-aware extension, Wiggler/Chain Chomp composition and door symbols with balanced outer rotation.",
     "diffCheckStatus": 0,
-    "mergeCommit": "543260aed075ff11fc2e4348addff5c412de8184",
-    "tree": "916e3e405555f34fe99379ca2fd6a4544943052f",
+    "mergeCommit": "aae0b18589bcb5aa6473ba3bec513d342c270480",
+    "tree": "728927beb1760a693f385c166d344dc3cf82272c",
     "resolutionPatch": "merges/16-pr21/resolution.patch"
   },
   {
     "position": 17,
     "pr": 23,
     "source": "7c9caa284b5381fd762c7da8f1fa46e076f4c201",
-    "before": "543260aed075ff11fc2e4348addff5c412de8184",
+    "before": "728927beb1760a693f385c166d344dc3cf82272c",
     "conflictFiles": [
       "draw/Draw.js"
     ],
@@ -455,8 +458,8 @@
     ],
     "resolution": "Keep all existing calibrated and specialized renderers plus PR23 generic atlas readiness, wing helper and calls. Preserve single-cell pipeRotation when adding post-body wing dispatch. Leave combination-specific pivot forwarding for separately identified compatibility patch.",
     "diffCheckStatus": 0,
-    "mergeCommit": "ad8aff5e180e80ff72aab5178cedcf171c1e84bf",
-    "tree": "fb67df2b91bbc56d391f82a9df9f2e8539991ea6",
+    "mergeCommit": "a30f8d9894829669087d42577c8ca006a629da42",
+    "tree": "2952e31149a63db88ac9536dda448e0de0f428e2",
     "resolutionPatch": "merges/17-pr23/resolution.patch"
   }
 ]
