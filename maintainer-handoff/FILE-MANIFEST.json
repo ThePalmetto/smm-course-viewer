@@ -1,19 +1,15 @@
 {
   "BROWSER-TEST.md": {
-    "bytes": 3994,
-    "sha256": "97d9df98418594e85a26e128f3fad6e3ca6f9d375507f640c0f2b886d0361ba4"
-  },
-  "MAINTAINER-MESSAGE.md": {
-    "bytes": 862,
-    "sha256": "398ce7405a60ddbd6d6e07ed578574107523af5d2fd7efcf620794dec67f41a5"
+    "bytes": 5067,
+    "sha256": "a04f15bf9938dcf3dd90887daeb47f152da7989e636dc8b303a1cb8aa597dccf"
   },
   "OPTION-B.md": {
     "bytes": 2348,
     "sha256": "2b54ac1662b1d56ba5749880e842af8f9ab7997d7b78ae17dc533e8c42d3846c"
   },
   "VALIDATION.md": {
-    "bytes": 5569,
-    "sha256": "d57e2a8773fa15b8950bb98f74e2f02132b27bef1fc03edffcc8d67734dbcff8"
+    "bytes": 6635,
+    "sha256": "865cda3bb1d4aafca0569ab722674ebc3e2538550dd64f1f7c8190f8e28ca871"
   },
   "SOURCE-COMPARISON.md": {
     "bytes": 2728,
@@ -32,12 +28,12 @@
     "sha256": "2997c3d6fa8b21c51baae0fd05ab9959fa20ee842d0d7046cc23618e16b15240"
   },
   "FINAL-STATUS.md": {
-    "bytes": 3349,
-    "sha256": "ec75a1caa15100a7566f01ffb4f0e9793e42eac9834d22f4d0f96e26057606e1"
+    "bytes": 4335,
+    "sha256": "583d84a7d6aa5750af43143ca08667ba55dc9ce4020afd651e2a3e1d3e59a176"
   },
   "README.md": {
-    "bytes": 4763,
-    "sha256": "e28ef3d47259acf45760d244cdf88287e2a0cc87bc249c867c7d550b73c3bd6f"
+    "bytes": 5487,
+    "sha256": "8cfa7e8d0280c208d26e28bbbbceb89c2b4a8fb566460fbd372559a99c3138d6"
   },
   "verify-tree.py": {
     "bytes": 1226,

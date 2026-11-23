@@ -8,6 +8,8 @@ The original independently tested application remains preserved at `test/option-
 
 **Required final application tree:** `ac33cc4c42aeb540a567ac01f31b964339a70994`.
 
+**Recommended workflow:** merge the existing 17 PRs individually using Option A. The complete independent replay and automated validation are complete, and manual browser visual acceptance is **PASS**. See VALIDATION.md for scope and limitations; no new production PR is needed.
+
 ## Read and verify
 
 - FINAL-STATUS.md: approved pins, independent replay outcome and remaining limitations.
@@ -16,9 +18,8 @@ The original independently tested application remains preserved at `test/option-
 - ASSETS.md / asset-hashes.json: the 28 required base atlases and exact approved hashes.
 - SOURCE-COMPARISON.md: six explained source differences from approved integration.
 - VALIDATION.md: completed automated evidence and fresh packaging checks, kept distinct.
-- BROWSER-TEST.md: separate WSL viewer at port 8008 and visual checklist.
+- BROWSER-TEST.md: manual acceptance, separate WSL viewer at port 8008 and retained visual checklist.
 - OPTION-B.md: optional coordinated-PR alternative, not a request to open or merge one.
-- MAINTAINER-MESSAGE.md: draft only; not sent.
 
 Run with normal Python 3 (not optimization mode):
 
@@ -65,6 +66,8 @@ The offline script verifies bundle integrity, retrieves only local objects, and 
 
 ## Browser test without replaying
 
-Use a new checkout of the testing branch; follow BROWSER-TEST.md. The refreshed application differs from the original verified tree only in the corrected SMB1 and SMB3 black Buzzy Shelmet PNGs from PR #14. Its 17-PR portable replay and exact tree verification passed. A fresh full regression-suite run and refreshed browser visual sign-off have not been performed.
+Use a new checkout of the refreshed verification branch and follow BROWSER-TEST.md. I previously compared the complete collection of compiled test courses in the original Option A viewer against my approved enhanced integration and recorded manual visual acceptance as PASS. That acceptance applies to the original tree `c75546d5456ba655c7a1afa59ddc31dc80186347`.
+
+The refreshed integration differs only in the corrected SMB1 and SMB3 black Buzzy Shelmet PNGs from PR #14. Its independent online and offline 17-PR replays and exact source verification passed. A new browser visual comparison of the refreshed artwork and a new full regression-suite run have not been performed. The original manual acceptance is not exhaustive or pixel-perfect automated verification; failure-injection browser testing is not reported complete.
 
 This publication creates only the documentation and browser-test branches. Existing PRs, master branches and compare/enhanced are unchanged; no PR was created or edited. Contacting the maintainer or publishing a coordinated PR remains a separate decision.

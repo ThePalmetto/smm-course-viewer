@@ -1,5 +1,19 @@
 # Separate WSL browser verification
 
+## Manual browser visual acceptance
+
+**Overall manual browser visual acceptance: PASS.**
+
+I visually inspected the complete collection of previously compiled SMM Course Viewer test courses in the independently merged Option A viewer. I compared the rendering with that of my previously approved enhanced viewer.
+
+I observed no differences. All inspected rendering features, object positions, rotations, artwork and layering appeared correct.
+
+Tested Option A reference: `test/option-a-final-verification@e14a6c1d5956b15cbfdaf00bd4bd1713a5dfaae9`, tree `c75546d5456ba655c7a1afa59ddc31dc80186347`. Comparison reference: `compare/enhanced@138004b530435efe423d9ed7065093101645963f`.
+
+This records my manual acceptance, not automated verification. It does not establish exhaustive coverage of every possible course, pixel-perfect automated comparison, or completed failure-injection browser testing.
+
+## Retained procedure for reproduction and further testing
+
 Use a new directory. Existing viewer, test courses and stash remain untouched. No hosted-agent temporary path is needed.
 
 ```bash
@@ -53,4 +67,4 @@ Failure blocks removed: yes/no
 Overall visual result: PASS / FAIL / INCOMPLETE
 ```
 
-Stop before edits to existing branches or PRs. This package does not claim the browser checks have already occurred.
+Stop before edits to existing branches or PRs. The healthy visual acceptance above records my manual testing. The checklist is retained for reproduction and further testing; failure-injection browser testing is not reported complete.

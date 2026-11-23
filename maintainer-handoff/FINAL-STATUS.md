@@ -30,9 +30,21 @@ The actual independent replay started from pinned upstream and performed all 17 
 
 The result contains all 17 pinned PR tips as ancestors, all 233 approved files and 173 PNGs, with no dirty/untracked files or conflict markers. Type-45 body calibration is supplied once by #21; compatibility supplies only the additional combined behavior; final artwork guards are supplied once by the last patch.
 
-Actual fresh regression results on this independent replay: 35,559 primary + 5,392 artwork + 576 lifecycle = 41,527 passed, zero failed/skipped. All 192 previously failing artwork scenes recovered. The separate publication of this handoff does not represent a new full-suite run or browser sign-off.
+Previously completed regression results on the independent replay: 35,559 primary + 5,392 artwork + 576 lifecycle = 41,527 passed, zero failed/skipped. All 192 previously failing artwork scenes recovered. Those automated suites were not rerun during this documentation update; my separate manual acceptance is recorded below.
 
-Option A is technically ready with documented conflict resolutions on the pinned baseline. Complete the separate browser comparison before final visual sign-off. All 17 PRs were verified open at pinned tips; no claim is made about review approval, CI or live GitHub mergeability.
+Option A is ready for maintainer handoff using the existing 17 PRs, the documented conflict resolutions and the pinned baseline. Manual browser visual acceptance is PASS. A new production PR is not required for this workflow. All 17 PRs were verified open at pinned tips; no claim is made about review approval, CI or live GitHub mergeability.
+
+## Manual browser visual acceptance
+
+**Overall manual browser visual acceptance: PASS.**
+
+I visually inspected the complete collection of previously compiled SMM Course Viewer test courses in the independently merged Option A viewer. I compared the rendering with that of my previously approved enhanced viewer.
+
+I observed no differences. All inspected rendering features, object positions, rotations, artwork and layering appeared correct.
+
+Tested Option A reference: `test/option-a-final-verification@e14a6c1d5956b15cbfdaf00bd4bd1713a5dfaae9`, tree `c75546d5456ba655c7a1afa59ddc31dc80186347`. Comparison reference: `compare/enhanced@138004b530435efe423d9ed7065093101645963f`.
+
+This records my manual acceptance, not automated verification. It does not establish exhaustive coverage of every possible course, pixel-perfect automated comparison, or completed failure-injection browser testing.
 
 Retained limitations: upstream Player/type-69 xY versus yT typo (192 separate expected-failure diagnostics); unresolved synthetic winged empty-Shelmet/Skewer combinations; accepted skull-coaster curved midpoint behavior. No new surface-wing dispatch or speculative calibration was introduced.
 
